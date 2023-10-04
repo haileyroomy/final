@@ -1681,7 +1681,7 @@ local initialHealth, finalHealth = message:match("(%-?%d+%.?%d*)%D*->(%-?%d+%.?%
 local studsValue = message:match("(%d+%.?%d*)s")
 if Trashtalk and extractedName and initialHealth and finalHealth and studsValue and extractedName ~= game.Players.LocalPlayer.Name then
 if Trashtalk and tonumber(finalHealth) <= 0 then
-  _Network.Send(_SendCodes.SEND_CHAT_MESSAGE, extractedName .. " killed from " .. studsValue .. "m, " .. Chats["🌶️Chilly.cc🌶️"][math.random(1, #Chats["🌶️Chilly.cc🌶️"])] .. " [.gg/fVhvC4QDSU🌶️]", "Global")
+  _Network.Send(_SendCodes.SEND_CHAT_MESSAGE, extractedName .. " killed from " .. studsValue .. "m, " .. Chats["🌶️Chilly.cc🌶️"][math.random(1, #Chats["🌶️Chilly.cc🌶️"])] .. " [.gg/UrNrEcuYgF					🌶️]", "Global")
 end
 end
 end)
@@ -1717,7 +1717,7 @@ TrashTalkTab:AddSlider('SpamChatSpeed', {Text = 'speed:',Suffix = "s", Default =
 WaitTime = SpamChatSpeedValue
 end)
 
-TrashTalkTab:AddInput('ChatSpammer', {Default = "If you cant beat them join them [.gg/fVhvC4QDSU🌶️] on top!", Numeric = false, Finished = true, Text = 'chat spammer:', Placeholder = "Chat Spam Custom Text [HERE]"}):OnChanged(function(value)
+TrashTalkTab:AddInput('ChatSpammer', {Default = "If you cant beat them join them [.gg/UrNrEcuYgF🌶️] on top!", Numeric = false, Finished = true, Text = 'chat spammer:', Placeholder = "Chat Spam Custom Text [HERE]"}):OnChanged(function(value)
 chatSpammerText = value
 end)
 
@@ -2340,6 +2340,7 @@ local oldFunction; oldFunction = hookfunction(getupvalues(getrenv()._G.modules.F
 args = {...}
 local Player,PlayerTable = Functions:GetClosest()
 if Combat.Settings.SilentEnabled == true and Player ~= nil and (CharcaterMiddle:GetPivot().Position-Player:GetPivot().Position).Magnitude <= Combat.Settings.RenderDistance and math.random(0,100) <= Combat.Settings.SilentHitChance then
+			
 if Combat.Settings.TeamCheck == true and Player.Head.Teamtag.Enabled == false then
 if Combat.Settings.SleeperCheck == true and PlayerTable.sleeping == false then
 args[1] = CFrame.lookAt(args[1].Position,Player[Combat.Settings.SilentAimPart]:GetPivot().p+Functions:Predict())
