@@ -1,17 +1,3 @@
-local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
-KeySystemUI.New({
-    ApplicationName = "ChillyCC", 
-    Name = "Chilly.CC", -- Your Script name
-    Info = "Chilly.CC key system",
-    DiscordInvite = "https://discord.gg/wUnma9gtHW" 
-})
-repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
-if KeySystemUI.Finished() and KeySystemUI.Closed == false then
-    print("Key verified, can load script")
-else
-    print("Player closed the GUI.")
-end
-
 
         print("[1/4] Loading Script");
 	wait(8 - 6);
