@@ -12,8 +12,7 @@ else
     print("Player closed the GUI.")
 end
 
-then 
-   then
+
         print("[1/4] Loading Script");
 	wait(8 - 6);
 	print("[2/4] Loading Themes");
