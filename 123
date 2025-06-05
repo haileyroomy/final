@@ -21,7 +21,6 @@ local Window = Library:CreateWindow({
 
 local Tabs = {
     Main = Window:AddTab("Main", "user"),
-    Visual = Window:AddTab("Visual"),
     Misc = Window:AddTab("Misc"),
     QuickShop = Window:AddTab("Settings"),
 }
