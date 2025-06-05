@@ -46,49 +46,7 @@ if GameId == 41210807 then
     GameName = "Aftermath" 
 end
 
-do --// Obfuscated check
-    if not LPH_OBFUSCATED then
-        LPH_JIT = function(...) return ... end
-        LPH_JIT_MAX = function(...) return ... end
-        LPH_NO_VIRTUALIZE = function(...) return ... end
-        LPH_NO_UPVALUES = function(f) return(function(...) return f(...) end) end
-        LPH_ENCSTR = function(...) return ... end
-        LPH_ENCNUM = function(...) return ... end
-        LPH_CRASH = function() return print(debug.traceback()) end
 
-        LRM_IsUserPremium = false 
-        LRM_LinkedDiscordID = "Developer"
-        LRM_ScriptName = "dev"
-        LRM_TotalExecutions = 0
-        LRM_SecondsLeft = 999999
-        LRM_UserNote = "hello";
-
-        if not gethui then 
-            gethui = function() return game.Players.LocalPlayer.PlayerGui end; 
-            IsStudio = true 
-        end
-    end;
-end;
-
-do --// Directories
-    if not IsStudio then --// im only checking it because i did a lot of this work in studio
-        if not isfolder("Reflex") then 
-            makefolder("Reflex");
-        end;
-
-        if not isfolder("Reflex/Configs") then 
-            makefolder("Reflex/Configs");
-        end;
-
-        if not isfolder("Reflex/Plugins") then 
-            makefolder("Reflex/Plugins");
-        end;
-
-        if not isfile("Reflex/Hitmarkers") then 
-            makefolder("Reflex/Hitmarkers");
-        end;
-    end;
-end;
 
 do --// Adonis Bypass (Eastern War, Criminality)
     do --// Eastern
